@@ -1,0 +1,163 @@
+:root{
+    --ff-titles: Playfair Display, serif;
+    --ff-paragraph: Roboto, sans-serif;
+    --bg-color-neutral: #FFF;
+    --bg-color-200: #e3f0ad;
+    --bg-color-400: #7DE2D1;
+    --bg-color-600: #339989;
+    --ff-color-small: #2B2C28;
+    --ff-color-large: #131515;
+}
+
+h1,
+h2,
+h3{
+    font-family: var(--ff-titles);
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-top: 0px;
+}
+
+p{
+    font-family: var(--ff-paragraph);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+button :hover{
+    cursor: pointer;
+}
+
+.container{
+    margin-inline: auto;
+    width: 80%;
+}
+
+
+header{
+    background: linear-gradient(1deg, var(--bg-color-600), var(--bg-color-200));
+    padding: 2em;
+}
+
+header>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+.head-content{
+    background-color: var(--bg-color-neutral);
+    max-height: 40%;
+    padding: 2em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100em;
+    border-radius: 25px;
+}
+
+.head-image{
+    position: relative;
+    text-align: end;
+}
+
+.author{
+    position: absolute;
+    bottom: 1px;
+    right: 30px;
+    font-size: min(20px, 2rem);
+    font-family: var(--ff-titles);
+    color: var(--ff-color-small);
+}
+
+.button-container{
+    align-self: flex-end;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5em;
+    margin-bottom: 2em;
+}
+
+.project-card{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--bg-color-neutral);
+    box-shadow: 0px 1px 12px var(--ff-color-large);
+    
+}
+
+.project-card > :first-child{
+    height: 50%;
+    background-color: var(--bg-color-400);
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.project-card > :nth-child(2){
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card > :nth-child(2) > :nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background: linear-gradient(1deg, var(--bg-color-200), var(--bg-color-600));
+}
+
+footer > .container{
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.coding{
+    border-radius: 25px;
+    width: min(60%, 40em);
+}
+
+img{
+    display: block;
+    width: 300px;
+}
+
+@media (max-width: 700px){
+    header>div, footer > .container{
+        flex-direction: column;
+    }
+
+    header>div{
+        gap: 2em;
+    }
+
+    .head-content{
+        width: 100%;
+    }
+}

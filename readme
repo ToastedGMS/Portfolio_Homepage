@@ -1,0 +1,13 @@
+Portfolio Homepage project based on The Odin Project's "Project Homepage" assignment.
+(https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage)
+
+The main focus of this project was to create a basic homepage for a portfolio, using
+responsive css techniques to keep it looking good regardless of screen size or orientation.
+
+It's a really simple experiment, yet valuable lessons can be learned from it, such as
+avoiding fixed dimentions for heights and widths, attempting yo keep as much of HTML's
+natural responsiveness as possible, and not overusing media queries, as they are really not
+the key to responsive layouts at all.
+
+Also special thanks to Kevin Powell, for all the helpful tips!
+(https://www.youtube.com/kevinpowell)
